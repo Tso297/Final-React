@@ -2,7 +2,7 @@ const token = 'd5ccb088109ce812a48065ff10dbf2bbc3bf5398acbbba98'
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`https://spontaneous-bombolone-f2c0d9.netlify.app/api/whiskeys`,
+        const response = await fetch(`https://whiskey-collection-e5fx.onrender.com/api/whiskeys`,
         {
             method: 'GET',
             headers: {
@@ -20,7 +20,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`https://spontaneous-bombolone-f2c0d9.netlify.app/api/whiskeys`,
+        const response = await fetch(`https://whiskey-collection-e5fx.onrender.com/api/whiskeys`,
         {
             method:'POST',
             headers: {
@@ -39,7 +39,7 @@ export const server_calls = {
     },
 
     update: async (id:string, data: any = {}) => {
-        const response = await fetch (`https://spontaneous-bombolone-f2c0d9.netlify.app/api/whiskeys/${id}`,
+        const response = await fetch (`https://whiskey-collection-e5fx.onrender.com/api/whiskeys/${id}`,
         {
             method: "PUT",
             headers: {
@@ -60,7 +60,7 @@ export const server_calls = {
     delete: async (id:string) => {
         console.log(id);
         
-        const response = await fetch (`https://spontaneous-bombolone-f2c0d9.netlify.app/api/whiskeys/${id}`,
+        const response = await fetch (`https://whiskey-collection-e5fx.onrender.com/api/whiskeys/${id}`,
         {
             method: "DELETE",
             headers: {
